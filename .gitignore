@@ -1,0 +1,14 @@
+
+mcp-client/build
+mcp-client/node_modules
+mcp-client/.env
+
+sse-mcp-server/build
+sse-mcp-server/node_modules
+sse-mcp-server/.env
+
+
+mcp-platform/.env
+mcp-platform/node_modules
+mcp-platform/build
+

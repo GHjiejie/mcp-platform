@@ -1,0 +1,1 @@
+npx @modelcontextprotocol/inspector node /Users/jie/Documents/Github/sse-mcp-server/build/server.js

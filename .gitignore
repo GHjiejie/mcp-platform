@@ -12,3 +12,10 @@ mcp-platform/.env
 mcp-platform/node_modules
 mcp-platform/build
 
+chat/web/build
+chat/web/node_modules 
+chat/web/.env
+chat/server/build
+chat/server/node_modules
+chat/server/.env
+

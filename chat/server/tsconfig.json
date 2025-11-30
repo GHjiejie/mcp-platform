@@ -10,9 +10,10 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationDir": "build"
+    "baseUrl": "./",
+    "paths": {
+      "mcp-client/lib": ["../../mcp-client/build/lib"]
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "build"]
+  "include": ["src/**/*"]
 }

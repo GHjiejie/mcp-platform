@@ -1,0 +1,39 @@
+
+up to date in 352ms
+
+25 packages are looking for funding
+  run `npm fund` for details
+
+> chat-backend@0.1.0 build
+> tsc -p tsconfig.json
+
+
+> chat-backend@0.1.0 start
+> node build/index.js
+
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5175
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (/Users/jie/Documents/Github/mcp-platform/chat/server/node_modules/express/lib/application.js:635:24)
+    at Object.<anonymous> (/Users/jie/Documents/Github/mcp-platform/chat/server/build/index.js:66:20)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 5175
+}
+
+Node.js v24.11.1

@@ -4,6 +4,17 @@
   "description": "Command-line MCP client for the Local DeepReasoning server",
   "main": "build/index.js",
   "type": "commonjs",
+  "exports": {
+    ".": "./build/index.js",
+    "./lib": {
+      "types": "./build/lib.d.ts",
+      "require": "./build/lib.js",
+      "default": "./build/lib.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
